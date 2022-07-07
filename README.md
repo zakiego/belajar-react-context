@@ -1,19 +1,6 @@
-# Next.js and Chakra UI
+# Belajar React Contex
 
-## Features:
-
-- Next.js 12
-- React 18
-- Chakra UI
-- TypeScript
-- Prettier
-- ESLint
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/zakiego/next-chakra&project-name=next-chakra&repository-name=next-chakra)
+[Belajar React Context: Dependency Injection & State Management](https://www.youtube.com/watch?v=k3vrtOQ3Q4k)
 
 ## How to use
 

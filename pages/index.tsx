@@ -1,97 +1,30 @@
-import { ExternalLinkIcon } from "@chakra-ui/icons";
-import {
-  Code,
-  Container,
-  Heading,
-  Link,
-  Stack,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Container, Flex, Heading } from "@chakra-ui/react";
 import Head from "next/head";
-import NextImage from "next/image";
+import ChangeName from "~/components/ChangeName";
+import Profile from "~/components/Profile";
+import Reducer from "~/components/Reducer";
 
 export default function Index() {
-  const breakpoints = {
-    base: "7",
-    sm: "",
-  };
-
   return (
-    <div>
+    <>
       <Head>
-        <title>Next Chakra</title>
-        <meta
-          name="description"
-          content="Next.js and Chakra UI With TypeScript"
-        />
+        <title>Belajar React Context</title>
       </Head>
-      <Container
-        maxWidth="container.xl"
-        className="vercel"
-        paddingX={breakpoints}
-      >
-        <VStack
-          align="center"
-          justify="center"
-          height="100vh"
-          spacing="6"
-          textAlign="center"
+      <div className="vercel">
+        <Flex
+          flexDirection="column"
+          minH="100vh"
+          justifyContent="center"
+          // alignItems="center"
         >
-          <NextImage
-            src="/static/images/next-chakra.png"
-            width={654}
-            height={124.02}
-            alt="Next.js and Chakra UI"
-          />
-
-          <VStack spacing="4">
-            <Heading as="h1" fontSize={{ base: "3xl", md: "5xl" }}>
-              <Link
-                href="https://nextjs.org"
-                _focus={{ boxShadow: "none" }}
-                isExternal
-              >
-                Next.js
-              </Link>{" "}
-              and{" "}
-              <Link
-                href="https://chakra-ui.com"
-                _focus={{ boxShadow: "none" }}
-                isExternal
-              >
-                Chakra UI
-              </Link>
-            </Heading>
-            <Text opacity="80%">With TypeSciprt, Prettier, and ESLint</Text>
-          </VStack>
-
-          <Stack>
-            <Code
-              bg="gray.700"
-              textColor="white"
-              rounded="md"
-              paddingX="5"
-              paddingY="4"
-              fontSize={{ base: "sm", md: "md" }}
-            >
-              yarn create next-app --example
-              https://github.com/zakiego/next-chakra
-            </Code>
-          </Stack>
-          <Stack>
-            <Link
-              color="teal.500"
-              href="https://github.com/zakiego/next-chakra"
-              fontSize={{ base: "sm", md: "md" }}
-              _focus={{ boxShadow: "none" }}
-              isExternal
-            >
-              View github repository <ExternalLinkIcon ml="2px" />
-            </Link>
-          </Stack>
-        </VStack>
-      </Container>
-    </div>
+          <Container>
+            <Heading mb="4">Profile</Heading>
+            <Profile />
+            <ChangeName />
+            <Reducer />
+          </Container>
+        </Flex>
+      </div>
+    </>
   );
 }
