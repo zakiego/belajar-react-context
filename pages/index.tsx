@@ -1,5 +1,6 @@
 import { Container, Flex, Heading } from "@chakra-ui/react";
 import Head from "next/head";
+
 import ChangeName from "~/components/ChangeName";
 import Profile from "~/components/Profile";
 import Reducer from "~/components/Reducer";

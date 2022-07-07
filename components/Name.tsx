@@ -1,8 +1,8 @@
 import { Text } from "@chakra-ui/react";
-import { useContext } from "react";
+
 import { useAppContext } from "~/context/app-context";
 
-const Name = ({}) => {
+const Name = () => {
   const context = useAppContext();
 
   return (

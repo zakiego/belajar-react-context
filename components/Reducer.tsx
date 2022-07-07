@@ -1,12 +1,5 @@
 import { AddIcon, MinusIcon } from "@chakra-ui/icons";
-import {
-  Box,
-  Button,
-  ButtonGroup,
-  HStack,
-  IconButton,
-  Text,
-} from "@chakra-ui/react";
+import { HStack, IconButton, Text } from "@chakra-ui/react";
 import { useReducer } from "react";
 
 function reducer(state: number, action: "increment" | "decrement") {

@@ -1,8 +1,9 @@
-import { Button, Input, Box, Text } from "@chakra-ui/react";
-import React, { useContext, useState } from "react";
+import { Box, Button, Input } from "@chakra-ui/react";
+import React, { useState } from "react";
+
 import { useAppContext } from "~/context/app-context";
 
-const ChangeName = ({}) => {
+const ChangeName = () => {
   const context = useAppContext();
 
   const [tempName, setTempName] = useState("");
